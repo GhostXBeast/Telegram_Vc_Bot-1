@@ -1,8 +1,8 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-from config import Config
+from config import config
 
-addbname = 'https://t.me/{}?startgroup=true'.format(Config.BOT_USERNAME[1:])
+addbname = 'https://t.me/{}?startgroup=true'.format(config.BOT_USERNAME[1:])
 
 @Client.on_message(filters.command(["start", "start@GroupMusicPlayBot"]) & filters.private & ~filters.channel)
 async def start(_, message: Message):
