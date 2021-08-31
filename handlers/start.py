@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-from config import MemoriesMusicBot
+from config import BOT_USERNAME
 
 
 
@@ -12,7 +12,7 @@ async def start(_, message: Message):
             [[
             InlineKeyboardButton("➕ Add To Your Group ➕", url="https://t.me/MemoriesMusicBot?startgroup=true")
             ],[
-            InlineKeyboardButton("💬 Group", url="https://t.me/BotMusics"),
+            InlineKeyboardButton("💬 Group", url="https://t.me/Team_Memories_Support"),
             InlineKeyboardButton("Commands 🛠", url="https://telegra.ph/Music-Bot-05-07")
             ]]
         ),
